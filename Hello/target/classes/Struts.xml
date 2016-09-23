@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <struts>
+  <constant name="struts.i18n.reload" value="false" /> 
+  <constant name="struts.devMode" value="false" /> 
+  <include file="struts-default.xml" /> 
+ <package name="default" extends="struts-default" namespace="/">
+ <action name="Login" class="edu.cn.zmt.LoginAction">
+  <result name="success">Login.jsp</result> 
+  <result name="error">index.jsp</result> 
+  </action>
+  </package>
+  </struts>
